@@ -24,7 +24,7 @@ from rest_framework.authtoken.views import obtain_auth_token
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
-    path('api-token-auth/', obtain_auth_token),
+    path('api-token-auth/', obtain_auth_token), # 사용자 ID/Password를 대체 할 토큰 이용
 ]
 
 urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

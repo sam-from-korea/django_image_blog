@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'rest_framework',
-    'rest_framework.authtoken',
+    'rest_framework.authtoken', # 사용자 ID/Password를 대체 할 토큰 이용
 ]
 
 MIDDLEWARE = [
